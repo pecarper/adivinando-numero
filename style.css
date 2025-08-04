@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("img/numeroSecretoMobile.png") no-repeat center;
+    background-size: cover;
+    background-color: black;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2rem;
+    color: rgba(248, 247, 245, 1);
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+#intentos-contenedor,
+#contador-contenedor,
+#adivinar-contenedor,
+#reiniciar-contenedor {
+    display: none;
+}
+
+.intentos-contenedor,
+.adivinar-contenedor,
+.contador-contenedor,
+.reiniciar-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 25rem;
+    max-height: 25rem;
+    color: antiquewhite;
+    overflow: auto;
+}
+
+label {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    color: antiquewhite;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    word-break: break-word;
+}
+
+.contador-intentos {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.7rem;
+    color: rgb(155, 0, 145);
+    font-weight: 700;
+}
+
+.adivinar-numero,
+.intentos-ajustar {
+    width: 45%;
+    border: none;
+    color:  rgba(255, 255, 255);
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    margin-top: 0.5rem;
+    background: transparent;
+    border: solid 0.5px rgb(140, 140, 140);
+    border-radius: 0.8rem;
+}
+
+.boton-usuario {
+    border-radius: 0.8rem;
+    background: rgba(155, 0, 145);
+    padding: 1rem 1rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    margin-top: 0.5rem;
+    color: antiquewhite;
+}
+
+.boton-usuario:disabled {
+    background-color: rgb(152, 148, 148, 0.6);
+}
+
+
+/* Diseño responsivo para pantallas medianas (tablets pequeños) */
+@media (min-width: 481px) and (max-width: 767px) {
+
+    body {
+        background: url("img/numeroSecretoEscritorio.webp") no-repeat center;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1.7rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .contador-intentos {
+        font-size: 1.5rem;
+    }
+
+    .adivinar-numero,
+    .intentos-ajustar {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .boton-usuario {
+        padding: 1.1rem;
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Diseño responsivo para pantallas grandes (escritorio)*/
+@media (min-width: 768px) {
+
+    body {
+        background: url("img/numeroSecretoEscritorio.webp") no-repeat center;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    .contador-intentos {
+        font-size: 2rem;
+    }
+
+    .adivinar-numero,
+    .intentos-ajustar {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .boton-usuario {
+        padding: 1.2rem;
+        font-size: 1.2rem;
+    }
+}

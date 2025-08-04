@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Adi</title>
+</head>
+
+<body>
+    <noscript>
+        <p>Este juego requiere JavaScript para funcionar. Por favor, habilita JavaScript en tu navegador.</p>
+    </noscript>
+    <main>
+        <h1></h1>
+        <section id="intentos-contenedor" class="intentos-contenedor">
+            <label for="intentos-ajustar" id="intentos-texto" aria-live="polite" role="status"></label>
+            <select id="intentos-ajustar" class="intentos-ajustar" aria-live="polite" role="status">
+                <option value="" disabled selected hidden>Elige</option>
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="7">7</option>
+            </select>
+            <button id="intentos-boton" class="boton-usuario" disabled>Comenzar</button>
+        </section>
+        <section id="contador-contenedor" class="contador-contenedor">
+            <span id="contador-intentos" class="contador-intentos" aria-live="polite" role="status"></span>
+        </section>
+        <section id="adivinar-contenedor" class="adivinar-contenedor">
+            <label for="adivinar-numero" id="adivinar-texto" aria-live="polite" role="status"></label>
+            <input id="adivinar-numero" type="number" min="1" max="10" class="adivinar-numero" disabled/>
+            <button id="adivinar-boton" class="boton-usuario" disabled>Intentar</button>
+        </section>
+        <section id="reiniciar-contenedor" class="reiniciar-contenedor">
+            <button id="reiniciar-boton" class="boton-usuario" disabled>Intentar Nuevamente</button>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
